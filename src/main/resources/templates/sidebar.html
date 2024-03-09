@@ -1,0 +1,155 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div th:fragment="mySidebar">
+    <div id="layoutSidenav_nav">
+        <nav class="sb-sidenav accordion sb-sidenav-dark"
+             id="sidenavAccordion">
+            <div class="sb-sidenav-menu">
+                <div class="nav">
+                    <a class="nav-link" href="/">
+                        <div class="sb-nav-link-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        Homepage
+                    </a>
+                    <div class="sb-sidenav-menu-heading">Modules</div>
+                    <a aria-controls="collapsePages" aria-expanded="false" class="nav-link collapsed"
+                       data-target="#collapsePages" data-toggle="collapse"
+                       href="#">
+                        <div class="sb-nav-link-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        Modules
+                        <div class="sb-sidenav-collapse-arrow">
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                    </a>
+                    <div aria-labelledby="headingTwo" class="collapse"
+                         data-parent="#sidenavAccordion" id="collapsePages">
+                        <nav class="sb-sidenav-menu-nested nav accordion"
+                             id="sidenavAccordionPages">
+                            <a aria-controls="pagesCollapseAuth" aria-expanded="false" class="nav-link collapsed"
+                               data-target="#pagesCollapseAuth" data-toggle="collapse"
+                               href="#"> Authentication
+                                <div class="sb-sidenav-collapse-arrow">
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                            </a>
+                            <div aria-labelledby="headingOne" class="collapse"
+                                 data-parent="#sidenavAccordionPages"
+                                 id="pagesCollapseAuth">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="#">Login</a> <a class="nav-link"
+                                                                              href="#">Register</a>
+                                </nav>
+                            </div>
+                            <a aria-controls="pagesCollapseItem" aria-expanded="false" class="nav-link collapsed"
+                               data-target="#pagesCollapseItem" data-toggle="collapse"
+                               href="#"> Item Management
+                                <div class="sb-sidenav-collapse-arrow">
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                            </a>
+                            <div aria-labelledby="headingOne" class="collapse"
+                                 data-parent="#sidenavAccordionPages"
+                                 id="pagesCollapseItem">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="/ItemView">Manage Inventory
+                                        Items</a> <a class="nav-link" href="/ItemCreate">Add a new
+                                    Item</a>
+                                </nav>
+                            </div>
+                            <a aria-controls="pagesCollapseItemIssue" aria-expanded="false" class="nav-link collapsed"
+                               data-target="#pagesCollapseItemIssue" data-toggle="collapse"
+                               href="#"> Item Issuance
+                                <div class="sb-sidenav-collapse-arrow">
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                            </a>
+                            <div aria-labelledby="headingOne" class="collapse"
+                                 data-parent="#sidenavAccordionPages"
+                                 id="pagesCollapseItemIssue">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="./ItemIssuanceView">Issued Items
+                                        Records</a> <a class="nav-link" href="/ItemIssuanceCreate">Issue
+                                    an item</a>
+                                </nav>
+                            </div>
+                            <a aria-controls="pagesCollapseItemReturn" aria-expanded="false" class="nav-link collapsed"
+                               data-target="#pagesCollapseItemReturn" data-toggle="collapse"
+                               href="#"> Item Return
+                                <div class="sb-sidenav-collapse-arrow">
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                            </a>
+                            <div aria-labelledby="headingOne" class="collapse"
+                                 data-parent="#sidenavAccordionPages"
+                                 id="pagesCollapseItemReturn">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="/ItemReturnCreate">Check-in Item</a>
+                                </nav>
+                            </div>
+                            <a aria-controls="pagesCollapseFine" aria-expanded="false" class="nav-link collapsed"
+                               data-target="#pagesCollapseFine" data-toggle="collapse"
+                               href="#"> Fine
+                                <div class="sb-sidenav-collapse-arrow">
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                            </a>
+                            <div aria-labelledby="headingOne" class="collapse"
+                                 data-parent="#sidenavAccordionPages"
+                                 id="pagesCollapseFine">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="/FineCreate">Fine Calculation</a> <a
+                                        class="nav-link" href="/FineView">Fine Records</a>
+                                </nav>
+                            </div>
+                            <a aria-controls="pagesCollapseItemRepair" aria-expanded="false" class="nav-link collapsed"
+                               data-target="#pagesCollapseItemRepair" data-toggle="collapse"
+                               href="#"> Item Repairing
+                                <div class="sb-sidenav-collapse-arrow">
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                            </a>
+                            <div aria-labelledby="headingOne" class="collapse"
+                                 data-parent="#sidenavAccordionPages"
+                                 id="pagesCollapseItemRepair">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="/ItemRepairCreate">Repair
+                                        Item</a>
+                                </nav>
+                            </div>
+                            <a aria-controls="pagesCollapseUser" aria-expanded="false" class="nav-link collapsed"
+                               data-target="#pagesCollapseUser" data-toggle="collapse"
+                               href="#"> User Management
+                                <div class="sb-sidenav-collapse-arrow">
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                            </a>
+                            <div aria-labelledby="headingOne" class="collapse"
+                                 data-parent="#sidenavAccordionPages"
+                                 id="pagesCollapseUser">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link"
+                                       href="../User Management/ManageUserAccount.html">User
+                                        Account Management</a> <a class="nav-link"
+                                                                  href="../User Management/AddNewUser.html">Add a new
+                                    User</a>
+                                    <a class="nav-link"
+                                       href="../User Management/ForgotPassword.html">Change
+                                        Password</a>
+                                </nav>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="sb-sidenav-footer">
+                <div class="small">Logged in as:</div>
+                Inventory Manager
+            </div>
+        </nav>
+    </div>
+</div>
+</body>
+</html>
